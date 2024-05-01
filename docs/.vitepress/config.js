@@ -2,8 +2,8 @@
  * @Author: Wanko
  * @Date: 2024-04-30 14:41:18
  * @LastEditors: Wanko
- * @LastEditTime: 2024-04-30 16:03:48
- * @Description: 
+ * @LastEditTime: 2024-05-01 17:33:11
+ * @Description:
  */
 import { defineConfig } from 'vitepress'
 
@@ -12,6 +12,7 @@ export default defineConfig({
   title: 'VitePress',
   description: 'VitePress | 由 Vite 和 Vue 驱动的静态站点生成器',
   lastUpdated: true,
+
   themeConfig: {
     siteTitle: 'VitePress',
     logo: '/vitepress-logo-mini.svg',
@@ -22,7 +23,14 @@ export default defineConfig({
     nav: [
       { text: '指南', link: '/guide/什么是VitePress' },
       { text: '参考', link: '/reference/站点配置' },
-      { text: '例子', link: '/markdown-examples' }
+      { text: '例子', link: '/markdown-examples' },
+      {
+        text: '下拉框',
+        items: [
+          { text: '下拉框1', link: '/dropdown/dropdown1' },
+          { text: '下拉框2', link: '/dropdown/dropdown2' }
+        ]
+      }
     ],
     sidebar: {
       '/reference/': [
@@ -57,7 +65,7 @@ export default defineConfig({
       '/guide/': [
         {
           text: '简介',
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: '什么是VitePress', link: '/guide/什么是VitePress' },
             { text: '快速开始', link: '/guide/快速开始' },
@@ -67,7 +75,7 @@ export default defineConfig({
         },
         {
           text: '写作',
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: 'Markdown扩展', link: '/guide/Markdown扩展' },
             { text: '资源处理', link: '/guide/资源处理' },
@@ -78,7 +86,7 @@ export default defineConfig({
         },
         {
           text: '自定义',
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: '自定义主题', link: '/guide/自定义主题' },
             { text: '扩展默认主题', link: '/guide/扩展默认主题' },
@@ -89,7 +97,7 @@ export default defineConfig({
         },
         {
           text: '实验性功能',
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: 'MPA模式', link: '/guide/MPA模式' },
             { text: 'sitemap生成', link: '/guide/sitemap生成' }
