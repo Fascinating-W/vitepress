@@ -2,19 +2,19 @@
  * @Author: Wanko
  * @Date: 2024-04-30 14:41:18
  * @LastEditors: Wanko
- * @LastEditTime: 2024-05-01 18:46:20
+ * @LastEditTime: 2024-05-01 18:47:36
  * @Description:
  */
 import { defineConfig } from 'vitepress'
 
-let base = '/'
+// let base = '/'
 
-if(location.href.includes('github'))  {
-  base = '/vitepress/'
-}
+// if(window.location.href.includes('github'))  {
+//   base = '/vitepress/'
+// }
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base,
+  // base,
   title: 'VitePress',
   description: 'VitePress | 由 Vite 和 Vue 驱动的静态站点生成器',
   lastUpdated: true,
