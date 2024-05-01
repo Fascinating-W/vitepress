@@ -2,13 +2,14 @@
  * @Author: Wanko
  * @Date: 2024-04-30 14:41:18
  * @LastEditors: Wanko
- * @LastEditTime: 2024-05-01 17:33:11
+ * @LastEditTime: 2024-05-01 18:29:12
  * @Description:
  */
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/vitepress/',
   title: 'VitePress',
   description: 'VitePress | 由 Vite 和 Vue 驱动的静态站点生成器',
   lastUpdated: true,
