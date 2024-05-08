@@ -2,19 +2,15 @@
  * @Author: Wanko
  * @Date: 2024-04-30 14:41:18
  * @LastEditors: Wanko
- * @LastEditTime: 2024-05-01 18:55:03
+ * @LastEditTime: 2024-05-08 14:44:22
  * @Description:
  */
 import { defineConfig } from 'vitepress'
 
-// let base = '/'
-
-// if(window.location.href.includes('github'))  {
-//   base = '/vitepress/'
-// }
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   // base,
+  // base = '/vitepress/'
   title: 'VitePress',
   description: 'VitePress | 由 Vite 和 Vue 驱动的静态站点生成器',
   lastUpdated: true,
@@ -22,6 +18,12 @@ export default defineConfig({
   themeConfig: {
     siteTitle: 'VitePress',
     logo: '/vitepress-logo-mini.svg',
+    editLink: {
+      pattern: 'https://github.com/Fascinating-W/vitepress/edit/master/docs/:path',
+      text: '在 GitHub 上编辑此页面'
+    },
+    outlineTitle: '大纲',
+    outline: [2, 6],
     search: {
       provider: 'local'
     },
